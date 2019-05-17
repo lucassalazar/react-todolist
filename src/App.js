@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { HashRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/Header';
 import Todos from './components/todos/Todos';
 import AddTodo from './components/todos/AddTodo';
@@ -18,7 +18,15 @@ class App extends Component {
 
   componentDidMount() {
     axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
-      .then(res => this.setState({ todos: res.data }));
+      .then(res =>
+        this.setState({ todos: res.data.map(todo => {
+          if(todo.completed === true) {
+            todo.completed=false;  
+          }
+          return todo;
+        })
+      })
+    );
   }
 
   // Toggle Completed
@@ -54,7 +62,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state)
     return ( // JSX
       <Router>
         <div className="App">
