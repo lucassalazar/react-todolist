@@ -1,9 +1,9 @@
 # To Do List App Using React
 
 I made this project to learn a little bit more about React.
-The main focus was to build an app just using react, so the style was made just with simple CSS.
+The main focus was to build an app just using react, so the style was made just with a simple CSS.
 
-In this app, the user can add/remove tasks from a list and mark them when they are completed.
+In this app, the user can add/remove tasks from the list and mark them when they are completed.
 
 ## Components of the To Do List App
 
@@ -36,7 +36,7 @@ What is react?
 
 ## How to create React apps?
 
-* CLI Tool for creating React applications
+* CLI Tool for creating React applications (create-react-app)
 * Uses Webpack but need no configuration from the developer
 * Comes bundled with a dev server with hot reload
 * "npm run build" will compile all the code to something that the browser can read
