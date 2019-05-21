@@ -1,7 +1,7 @@
 # To Do List App Using React
 
 I made this project to learn a little bit more about React.
-The main focus was to build an app just using react, so the style was made just with a simple CSS.
+The main focus was to build an app just using react, so the style was made just with simple CSS.
 
 In this app, the user can add/remove tasks from the list and mark them when they are completed.
 
